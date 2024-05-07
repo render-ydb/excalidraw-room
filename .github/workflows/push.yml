@@ -15,8 +15,9 @@ jobs:
 
       - name: Install dependencies and compile project
         run: |
-          npm ci --force
-          npm run build
+          npm i yarn -g
+          yarn
+          yarn build
 
       - name: Build deployment package (excluding node_modules and other directories)
         run: |
